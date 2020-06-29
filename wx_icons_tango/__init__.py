@@ -57,7 +57,13 @@ class TangoIconTheme(HicolorIconTheme):
 
 		return cls.from_configparser(theme_index_path)
 
-	def find_icon(self, icon_name, size, scale, prefer_this_theme=True):
+	def find_icon(
+			self,
+			icon_name: str,
+			size: int,
+			scale: Any,
+			prefer_this_theme: bool = True,
+	) -> Optional[Icon]:
 		"""
 
 		:param icon_name:
@@ -84,7 +90,7 @@ class TangoIconTheme(HicolorIconTheme):
 class wxTangoIconTheme(wxHicolorIconTheme):
 	_tango_theme = TangoIconTheme.create()
 
-	def CreateBitmap(self, id, client, size):
+	def CreateBitmap(self, id: Any, client: Any, size: Union[Tuple[int], wx.Size]) -> wx.Bitmap:
 		icon = self._tango_theme.find_icon(id, size.x, None)
 		if icon:
 			print(icon, icon.path)
