@@ -19,7 +19,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |travis| |actions_windows| |actions_macos| |codefactor|
+	  - |travis| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
@@ -27,71 +27,76 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	* - Other
 	  - |license| |language| |requires| |pre_commit|
 
-.. |docs| image:: https://img.shields.io/readthedocs/custom_wx_icons_tango/latest?logo=read-the-docs
-	:target: https://custom_wx_icons_tango.readthedocs.io/en/latest/?badge=latest
-	:alt: Documentation Status
+.. |docs| rtfd-shield::
+	:project: custom_wx_icons_tango
+	:alt: Documentation Build Status
 
-.. |docs_check| image:: https://github.com/domdfcoding/custom_wx_icons_tango/workflows/Docs%20Check/badge.svg
-	:target: https://github.com/domdfcoding/custom_wx_icons_tango/actions?query=workflow%3A%22Docs+Check%22
+.. |docs_check| actions-shield::
+	:workflow: Docs Check
 	:alt: Docs Check Status
 
-.. |travis| image:: https://img.shields.io/travis/com/domdfcoding/custom_wx_icons_tango/master?logo=travis
-	:target: https://travis-ci.com/domdfcoding/custom_wx_icons_tango
-	:alt: Travis Build Status
+.. |travis| actions-shield::
+	:workflow: Linux Tests
+	:alt: Linux Test Status
 
-.. |actions_windows| image:: https://github.com/domdfcoding/custom_wx_icons_tango/workflows/Windows%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/custom_wx_icons_tango/actions?query=workflow%3A%22Windows+Tests%22
-	:alt: Windows Tests Status
+.. |actions_windows| actions-shield::
+	:workflow: Windows Tests
+	:alt: Windows Test Status
 
-.. |actions_macos| image:: https://github.com/domdfcoding/custom_wx_icons_tango/workflows/macOS%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/custom_wx_icons_tango/actions?query=workflow%3A%22macOS+Tests%22
-	:alt: macOS Tests Status
+.. |actions_macos| actions-shield::
+	:workflow: macOS Tests
+	:alt: macOS Test Status
 
-.. |requires| image:: https://requires.io/github/domdfcoding/custom_wx_icons_tango/requirements.svg?branch=master
-	:target: https://requires.io/github/domdfcoding/custom_wx_icons_tango/requirements/?branch=master
+.. |requires| requires-io-shield::
 	:alt: Requirements Status
 
-.. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/custom_wx_icons_tango?logo=codefactor
-	:target: https://www.codefactor.io/repository/github/domdfcoding/custom_wx_icons_tango
+.. |codefactor| codefactor-shield::
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/wx_icons_tango
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |pypi-version| pypi-shield::
+	:project: wx_icons_tango
+	:version:
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango?logo=python&logoColor=white
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |supported-versions| pypi-shield::
+	:project: wx_icons_tango
+	:py-versions:
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/wx_icons_tango
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |supported-implementations| pypi-shield::
+	:project: wx_icons_tango
+	:implementations:
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/wx_icons_tango
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |wheel| pypi-shield::
+	:project: wx_icons_tango
+	:wheel:
 	:alt: PyPI - Wheel
 
-.. |license| image:: https://img.shields.io/github/license/domdfcoding/custom_wx_icons_tango
-	:target: https://github.com/domdfcoding/custom_wx_icons_tango/blob/master/LICENSE
+.. |license| github-shield::
+	:license:
 	:alt: License
 
-.. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/custom_wx_icons_tango
+.. |language| github-shield::
+	:top-language:
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/custom_wx_icons_tango/v0.1.1
-	:target: https://github.com/domdfcoding/custom_wx_icons_tango/pulse
+.. |commits-since| github-shield::
+	:commits-since: v0.1.1
 	:alt: GitHub commits since tagged version
 
-.. |commits-latest| image:: https://img.shields.io/github/last-commit/domdfcoding/custom_wx_icons_tango
-	:target: https://github.com/domdfcoding/custom_wx_icons_tango/commit/master
+.. |commits-latest| github-shield::
+	:last-commit:
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2020
+.. |maintained| maintained-shield:: 2020
 	:alt: Maintenance
 
-.. |pre_commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
-	:target: https://github.com/pre-commit/pre-commit
+.. |pre_commit| pre-commit-shield::
 	:alt: pre-commit
+
+.. |pre_commit_ci| pre-commit-ci-shield::
+	:alt: pre-commit.ci status
 
 .. end shields
 
@@ -100,20 +105,9 @@ Installation
 
 .. start installation
 
-.. tabs::
-
-	.. tab:: from PyPI
-
-		.. prompt:: bash
-
-			python3 -m pip install wx_icons_tango --user
-
-
-	.. tab:: from GitHub
-
-		.. prompt:: bash
-
-			python3 -m pip install git+https://github.com/domdfcoding/custom_wx_icons_tango@master --user
+.. installation:: wx_icons_tango
+	:pypi:
+	:github:
 
 .. end installation
 

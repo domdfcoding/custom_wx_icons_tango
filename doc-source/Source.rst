@@ -3,7 +3,7 @@ Downloading source code
 =========================
 
 The ``wx_icons_tango`` source code is available on GitHub,
-and can be accessed from the following URL: https://github.com/domdfcoding/custom_wx_icons_tango"
+and can be accessed from the following URL: https://github.com/domdfcoding/custom_wx_icons_tango
 
 If you have ``git`` installed, you can clone the repository with the following command:
 
