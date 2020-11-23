@@ -34,6 +34,8 @@ from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme  # type:
 # this package
 from wx_icons_tango import Tango
 
+__all__ = ["TangoIconTheme", "version", "wxTangoIconTheme"]
+
 with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
 	theme_index_path = str(theme_index_path_)
 
@@ -108,7 +110,7 @@ class wxTangoIconTheme(wxHicolorIconTheme):
 			return super().CreateBitmap(id, client, size)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	# theme = TangoIconTheme.from_configparser(theme_index_path)
 	theme = TangoIconTheme.create()
 
