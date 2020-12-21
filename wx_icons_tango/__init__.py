@@ -41,7 +41,6 @@ with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
 	theme_index_path = str(theme_index_path_)
 
 
-
 def version():
 	return f"""wx_icons_tango
 Version {__version__}
