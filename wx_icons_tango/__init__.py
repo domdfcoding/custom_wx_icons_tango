@@ -1,6 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #
 #  __init__.py
+"""
+Tango icon theme for wxPython 🐍.
+"""
 #
 #  Copyright (C) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #
@@ -24,11 +27,11 @@
 #
 
 # stdlib
-from typing import Any, Optional, Tuple, Union
+from typing import Any, Optional, Tuple, Type, Union
 
 # 3rd party
-import importlib_resources
 import wx  # type: ignore
+from domdf_python_tools.compat import importlib_resources
 from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme
 
 # this package
@@ -41,20 +44,24 @@ with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
 	theme_index_path = str(theme_index_path_)
 
 
-def version():
+def version() -> str:
+	"""
+	Returns the version of this package and the icon theme, formatted for printing.
+	"""
+
 	return f"""wx_icons_tango
 Version {__version__}
 Tango Icon Theme Version 0.8.90
 """
 
 
-class TangoIconTheme(HicolorIconTheme):
+class TangoIconTheme(HicolorIconTheme):  # noqa: D101
 	_hicolor_theme = HicolorIconTheme.create()
 
 	@classmethod
-	def create(cls):
+	def create(cls: Type["TangoIconTheme"]) -> "TangoIconTheme":
 		"""
-		Create an instance of the Tango Icon Theme
+		Create an instance of the Tango Icon Theme.
 		"""
 
 		with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
@@ -62,27 +69,13 @@ class TangoIconTheme(HicolorIconTheme):
 
 		return cls.from_configparser(theme_index_path)
 
-	def find_icon(
+	def find_icon(  # noqa: D102
 			self,
 			icon_name: str,
 			size: int,
 			scale: Any,
 			prefer_this_theme: bool = True,
 			) -> Optional[Icon]:
-		"""
-
-		:param icon_name:
-		:type icon_name:
-		:param size:
-		:type size:
-		:param scale:
-		:type scale:
-		:param prefer_this_theme: Return an icon from this theme even if it has to be resized,
-			rather than a correctly sized icon from the parent theme.
-		:type prefer_this_theme:
-		:return:
-		:rtype:
-		"""
 
 		icon = self._do_find_icon(icon_name, size, scale, prefer_this_theme)
 
@@ -93,10 +86,15 @@ class TangoIconTheme(HicolorIconTheme):
 			return self._hicolor_theme.find_icon(icon_name, size, scale)
 
 
-class wxTangoIconTheme(wxHicolorIconTheme):
+class wxTangoIconTheme(wxHicolorIconTheme):  # noqa: D101
 	_tango_theme = TangoIconTheme.create()
 
-	def CreateBitmap(self, id: Any, client: Any, size: Union[Tuple[int], wx.Size]) -> wx.Bitmap:
+	def CreateBitmap(  # noqa: D102
+			self,
+			id: Any,  # noqa: A002  # pylint: disable=redefined-builtin
+			client: Any,
+			size: Union[Tuple[int], wx.Size],
+			) -> wx.Bitmap:
 		icon = self._tango_theme.find_icon(id, size[0], None)
 
 		if icon:
@@ -117,7 +115,8 @@ if __name__ == "__main__":
 	# 	print(directory.icons)
 
 	# 3rd party
-	from wx_icons_hicolor import test, test_random_icons
+	# from wx_icons_hicolor import test, test_random_icons
+	from wx_icons_hicolor import test
 
 	# test_random_icons(theme)
 	test.test_icon_theme(theme, show_success=False)
