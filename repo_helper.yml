@@ -57,3 +57,6 @@ keywords:
 
 imgbot_ignore:
   - "wx_icons_tango/*"
+
+tox_unmanaged:
+ - testenv
