@@ -90,11 +90,11 @@ class wxTangoIconTheme(wxHicolorIconTheme):  # noqa: D101
 	_tango_theme = TangoIconTheme.create()
 
 	def CreateBitmap(  # noqa: D102
-			self,
-			id: Any,  # noqa: A002  # pylint: disable=redefined-builtin
-			client: Any,
-			size: Union[Tuple[int], wx.Size],
-			) -> wx.Bitmap:
+		self,
+		id: Any,  # noqa: A002  # pylint: disable=redefined-builtin
+		client: Any,
+		size: Union[Tuple[int], wx.Size],
+		) -> wx.Bitmap:
 		icon = self._tango_theme.find_icon(id, size[0], None)
 
 		if icon:
