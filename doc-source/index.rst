@@ -130,8 +130,9 @@ Installation
 
 	usage
 	docs
+	contributing
 	Source
-	Building
+	license
 
 
 .. sidebar-links::
