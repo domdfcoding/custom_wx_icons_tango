@@ -103,7 +103,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2024
+	.. |maintained| maintained-shield:: 2025
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
