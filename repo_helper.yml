@@ -64,3 +64,10 @@ imgbot_ignore:
 
 tox_unmanaged:
  - testenv
+
+
+github_ci_requirements:
+ macOS:
+  post:
+   # Prefery binary wheels for older versions over sdists for newer ones
+   - pip config set global.prefer-binary true
