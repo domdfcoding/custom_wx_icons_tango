@@ -89,7 +89,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/custom_wx_icons_tango
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/custom_wx_icons_tango/v0.1.1
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/custom_wx_icons_tango/v0.2.0
 	:target: https://github.com/domdfcoding/custom_wx_icons_tango/pulse
 	:alt: GitHub commits since tagged version
 

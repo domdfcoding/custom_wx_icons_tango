@@ -37,7 +37,7 @@ from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme
 # this package
 from wx_icons_tango import Tango
 
-__version__: str = "0.1.1"
+__version__: str = "0.2.0"
 __all__ = ["TangoIconTheme", "version", "wxTangoIconTheme"]
 
 with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
