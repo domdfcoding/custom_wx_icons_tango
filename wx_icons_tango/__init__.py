@@ -94,7 +94,7 @@ class wxTangoIconTheme(wxHicolorIconTheme):  # noqa: D101
 		id: Any,  # noqa: A002  # pylint: disable=redefined-builtin
 		client: Any,
 		size: Union[Tuple[int], wx.Size],
-		) -> wx.Bitmap:
+	) -> wx.Bitmap:
 		icon = self._tango_theme.find_icon(id, size[0], None)
 
 		if icon:
