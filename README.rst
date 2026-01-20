@@ -117,7 +117,7 @@ To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install wx_icons_tango
+	$ python -m pip install wx-icons-tango
 
 .. end installation
 

@@ -118,8 +118,9 @@ Installation
 
 .. start installation
 
-.. installation:: wx_icons_tango
+.. installation:: custom_wx_icons_tango
 	:pypi:
+	:pypi-name: wx-icons-tango
 	:github:
 
 .. end installation
