@@ -3,7 +3,7 @@ requires = [ "setuptools!=61.*,<=67.1.0,>=40.6.0", "wheel>=0.34.2",]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "wx_icons_tango"
+name = "wx-icons-tango"
 version = "0.2.0"
 description = "Tango icon theme for wxPython 🐍"
 readme = "README.rst"
@@ -67,6 +67,7 @@ python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "LGPL-3.0-or-later"
 additional-files = [ "recursive-include wx_icons_tango *",]
+package = "wx_icons_tango"
 
 [tool.importcheck]
 

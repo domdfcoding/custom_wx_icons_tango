@@ -66,20 +66,20 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	:target: https://www.codefactor.io/repository/github/domdfcoding/custom_wx_icons_tango
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/wx_icons_tango
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |pypi-version| image:: https://img.shields.io/pypi/v/wx-icons-tango
+	:target: https://pypi.org/project/wx-icons-tango/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango?logo=python&logoColor=white
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx-icons-tango?logo=python&logoColor=white
+	:target: https://pypi.org/project/wx-icons-tango/
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/wx_icons_tango
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/wx-icons-tango
+	:target: https://pypi.org/project/wx-icons-tango/
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/wx_icons_tango
-	:target: https://pypi.org/project/wx_icons_tango/
+.. |wheel| image:: https://img.shields.io/pypi/wheel/wx-icons-tango
+	:target: https://pypi.org/project/wx-icons-tango/
 	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/custom_wx_icons_tango
@@ -100,8 +100,8 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
-.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/wx_icons_tango
-	:target: https://pypistats.org/packages/wx_icons_tango
+.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/wx-icons-tango
+	:target: https://pypistats.org/packages/wx-icons-tango
 	:alt: PyPI - Downloads
 
 .. end shields
@@ -117,7 +117,7 @@ To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install wx_icons_tango
+	$ python -m pip install wx-icons-tango
 
 .. end installation
 
