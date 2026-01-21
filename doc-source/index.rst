@@ -68,22 +68,22 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 		:alt: CodeFactor Grade
 
 	.. |pypi-version| pypi-shield::
-		:project: wx_icons_tango
+		:project: wx-icons-tango
 		:version:
 		:alt: PyPI - Package Version
 
 	.. |supported-versions| pypi-shield::
-		:project: wx_icons_tango
+		:project: wx-icons-tango
 		:py-versions:
 		:alt: PyPI - Supported Python Versions
 
 	.. |supported-implementations| pypi-shield::
-		:project: wx_icons_tango
+		:project: wx-icons-tango
 		:implementations:
 		:alt: PyPI - Supported Implementations
 
 	.. |wheel| pypi-shield::
-		:project: wx_icons_tango
+		:project: wx-icons-tango
 		:wheel:
 		:alt: PyPI - Wheel
 
@@ -107,7 +107,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
-		:project: wx_icons_tango
+		:project: wx-icons-tango
 		:downloads: month
 		:alt: PyPI - Downloads
 
